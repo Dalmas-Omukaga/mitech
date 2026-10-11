@@ -34,7 +34,7 @@ export default function RootLayout({
         
         {/* Global Faint Watermark Logo Background */}
         <div className="fixed inset-0 pointer-events-none flex items-center justify-center z-0 overflow-hidden">
-          <div className="relative w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] opacity-[0.03] select-none">
+          <div className="relative w-125 h-125 sm:w-175 sm:h-175 opacity-[0.03] select-none">
             <Image
               src="/images/logo.png"
               alt="Mitech Watermark Background"
@@ -48,8 +48,8 @@ export default function RootLayout({
         {/* Navbar */}
         <Navbar />
 
-        {/* Main Content Area (relative z-10 ensures it stays above the background watermark) */}
-        <main className="flex-grow relative z-10">
+        {/* Main Content Area */}
+        <main className="grow relative z-10">
           {children}
         </main>
 
